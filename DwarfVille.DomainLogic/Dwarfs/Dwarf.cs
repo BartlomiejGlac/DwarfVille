@@ -1,16 +1,20 @@
-using DwarfVille.DomainLogic.Buildings.Mining.Shafts;
+using DwarfVille.DomainLogic.Buildings.MiningDistrict.Shafts;
+using DwarfVille.DomainLogic.Buildings.ShopDistrict;
+using DwarfVille.DomainLogic.Dwarfs.ShoppingStrategies;
 using DwarfVille.DomainLogic.Dwarfs.WorkingStrategies;
 
 namespace DwarfVille.DomainLogic.Dwarfs
 {
-    internal class Dwarf
+    internal class Dwarf : IWorkable, IBuyable
     {
         private readonly IWorkStrategy _workStrategy;
+        private readonly IShoppingStrategy _shoppingStrategy;
         private bool _isKilled;
 
-        public Dwarf(IWorkStrategy workStrategy)
+        public Dwarf(IWorkStrategy workStrategy, IShoppingStrategy shoppingStrategy)
         {
             _workStrategy = workStrategy;
+            _shoppingStrategy = shoppingStrategy;
         }
 
         public void KillMe()
@@ -25,6 +29,11 @@ namespace DwarfVille.DomainLogic.Dwarfs
                 throw new AmDeadException();
             }
             _workStrategy.WorkOn(shaft);
+        }
+
+        public void ShopIn(IShop shop)
+        {
+            _shoppingStrategy.BuyWhatINeed(shop);
         }
     }
 }

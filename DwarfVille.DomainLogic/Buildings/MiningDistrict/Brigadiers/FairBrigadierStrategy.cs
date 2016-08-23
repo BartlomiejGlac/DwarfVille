@@ -1,10 +1,10 @@
 using System.Collections.Generic;
-using DwarfVille.DomainLogic.Buildings.Mining.Shafts;
-using DwarfVille.DomainLogic.Buildings.Mining.Walls;
+using DwarfVille.DomainLogic.Buildings.MiningDistrict.Shafts;
+using DwarfVille.DomainLogic.Buildings.MiningDistrict.Walls;
 using DwarfVille.DomainLogic.Dwarfs;
 using DwarfVille.DomainLogic.Probability;
 
-namespace DwarfVille.DomainLogic.Buildings.Mining.Brigadiers
+namespace DwarfVille.DomainLogic.Buildings.MiningDistrict.Brigadiers
 {
     internal class FairBrigadierStrategy : IBrigadierStrategy
     {

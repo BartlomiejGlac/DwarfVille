@@ -1,6 +1,6 @@
 ﻿using DwarfVille.DomainLogic.Probability;
 
-namespace DwarfVille.DomainLogic.Buildings.Mining.Walls
+namespace DwarfVille.DomainLogic.Buildings.MiningDistrict.Walls
 {
     public class TheWall : IDigable
     {

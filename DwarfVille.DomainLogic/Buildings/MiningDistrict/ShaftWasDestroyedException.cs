@@ -1,6 +1,6 @@
 using System;
 
-namespace DwarfVille.DomainLogic.Buildings.Mining
+namespace DwarfVille.DomainLogic.Buildings.MiningDistrict
 {
     internal class ShaftWasDestroyedException : Exception
     {

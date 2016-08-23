@@ -1,4 +1,4 @@
-﻿using DwarfVille.DomainLogic.Buildings.Mining.Walls;
+﻿using DwarfVille.DomainLogic.Buildings.MiningDistrict.Walls;
 using DwarfVille.DomainLogic.Probability;
 using Moq;
 using NUnit.Framework;

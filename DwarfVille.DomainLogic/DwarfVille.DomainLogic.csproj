@@ -41,23 +41,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dwarfs\AmDeadException.cs" />
+    <Compile Include="Buildings\ShopDistrict\IShop.cs" />
+    <Compile Include="Dwarfs\IBuyable.cs" />
+    <Compile Include="Dwarfs\IWorkable.cs" />
+    <Compile Include="Dwarfs\ShoppingStrategies\FatherShoppingStrategy.cs" />
+    <Compile Include="Dwarfs\ShoppingStrategies\IShoppingStrategy.cs" />
+    <Compile Include="Dwarfs\ShoppingStrategies\SignleShoppingStrategy.cs" />
     <Compile Include="Dwarfs\WorkingStrategies\DiggerStrategy.cs" />
     <Compile Include="Dwarfs\Dwarf.cs" />
-    <Compile Include="Buildings\Mining\Brigadiers\FairBrigadierStrategy.cs" />
-    <Compile Include="Buildings\Mining\Brigadiers\IBrigadierStrategy.cs" />
-    <Compile Include="Buildings\Mining\Shafts\IShaft.cs" />
-    <Compile Include="Buildings\Mining\Walls\IDigable.cs" />
+    <Compile Include="Buildings\MiningDistrict\Brigadiers\FairBrigadierStrategy.cs" />
+    <Compile Include="Buildings\MiningDistrict\Brigadiers\IBrigadierStrategy.cs" />
+    <Compile Include="Buildings\MiningDistrict\Shafts\IShaft.cs" />
+    <Compile Include="Buildings\MiningDistrict\Walls\IDigable.cs" />
     <Compile Include="Dwarfs\WorkingStrategies\SaboteurStrategy.cs" />
     <Compile Include="Probability\ProbabilityGenerator.cs" />
     <Compile Include="Probability\IProbabilityGenerator.cs" />
-    <Compile Include="Buildings\Mining\Mine.cs" />
-    <Compile Include="Buildings\Mining\Walls\MaterialType.cs" />
-    <Compile Include="Buildings\Mining\Shafts\Shaft.cs" />
-    <Compile Include="Buildings\Mining\ShaftWasDestroyedException.cs" />
-    <Compile Include="Buildings\Mining\Walls\TheWall.cs" />
+    <Compile Include="Buildings\MiningDistrict\Mine.cs" />
+    <Compile Include="Buildings\MiningDistrict\Walls\MaterialType.cs" />
+    <Compile Include="Buildings\MiningDistrict\Shafts\Shaft.cs" />
+    <Compile Include="Buildings\MiningDistrict\ShaftWasDestroyedException.cs" />
+    <Compile Include="Buildings\MiningDistrict\Walls\TheWall.cs" />
     <Compile Include="Dwarfs\WorkingStrategies\IWorkStrategy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

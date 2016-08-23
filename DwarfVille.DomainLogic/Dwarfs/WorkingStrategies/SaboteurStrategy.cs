@@ -1,4 +1,4 @@
-using DwarfVille.DomainLogic.Buildings.Mining.Shafts;
+using DwarfVille.DomainLogic.Buildings.MiningDistrict.Shafts;
 
 namespace DwarfVille.DomainLogic.Dwarfs.WorkingStrategies
 {

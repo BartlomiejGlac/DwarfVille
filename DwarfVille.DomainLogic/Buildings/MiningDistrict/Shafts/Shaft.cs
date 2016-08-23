@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using DwarfVille.DomainLogic.Buildings.Mining.Walls;
+using DwarfVille.DomainLogic.Buildings.MiningDistrict.Walls;
 using DwarfVille.DomainLogic.Dwarfs;
 
-namespace DwarfVille.DomainLogic.Buildings.Mining.Shafts
+namespace DwarfVille.DomainLogic.Buildings.MiningDistrict.Shafts
 {
     internal class Shaft : IShaft
     {

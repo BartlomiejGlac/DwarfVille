@@ -1,4 +1,4 @@
-﻿namespace DwarfVille.DomainLogic.Buildings.Mining.Walls
+﻿namespace DwarfVille.DomainLogic.Buildings.MiningDistrict.Walls
 {
     public interface IDigable
     {
