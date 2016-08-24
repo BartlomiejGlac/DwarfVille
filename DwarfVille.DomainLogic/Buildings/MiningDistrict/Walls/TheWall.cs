@@ -2,7 +2,7 @@
 
 namespace DwarfVille.DomainLogic.Buildings.MiningDistrict.Walls
 {
-    public class TheWall : IDigable
+    internal class TheWall : IDigable
     {
         private readonly IProbabilityGenerator _probabilityGenerator;
 

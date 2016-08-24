@@ -5,7 +5,7 @@ using DwarfVille.DomainLogic.Dwarfs.WorkingStrategies;
 
 namespace DwarfVille.DomainLogic.Dwarfs
 {
-    internal class Dwarf : IWorkable, IBuyable
+    public class Dwarf : IWorkable, IBuyable
     {
         private readonly IWorkStrategy _workStrategy;
         private readonly IShoppingStrategy _shoppingStrategy;

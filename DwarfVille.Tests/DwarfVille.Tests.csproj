@@ -58,7 +58,10 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="MineTests\TheWallTest.cs" />
+    <Compile Include="Buildings\MiningDistrict\Shafts\ShaftTests.cs" />
+    <Compile Include="Buildings\MiningDistrict\Walls\TheWallTest.cs" />
+    <Compile Include="Dwarfs\WorkingStrategies\SaboteurStrategyTest.cs" />
+    <Compile Include="Dwarfs\WorkingStrategies\DiggerStrategyTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,6 @@
 namespace DwarfVille.DomainLogic.Buildings.ShopDistrict
 {
-    internal interface IShop
+    public interface IShop
     {
     }
 }

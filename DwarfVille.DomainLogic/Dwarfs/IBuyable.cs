@@ -6,6 +6,7 @@ namespace DwarfVille.DomainLogic.Dwarfs
     // Main reason is that we need something that would tell us we have to create methods to start interaction with shop.
     // And knowladge about what I need to buy should not be in Shop but in Dwarf.
     // For marketers this would be the best strategy. But for programmers I think it would be better to put this into Dwarf.
+    // Or in some kind of strategy later. Dwarf should be more cleaner. We do not want to break SRP.
     internal interface IBuyable
     {
         void ShopIn(IShop shop);

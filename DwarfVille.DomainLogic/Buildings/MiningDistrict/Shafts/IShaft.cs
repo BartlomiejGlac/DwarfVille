@@ -3,9 +3,9 @@ using DwarfVille.DomainLogic.Dwarfs;
 
 namespace DwarfVille.DomainLogic.Buildings.MiningDistrict.Shafts
 {
-    internal interface IShaft
+    public interface IShaft
     {
-        void AssignDwarf(Dwarf assignedToWorkDwarf);
+        void AssignDwarf(IWorkable assignedToWorkDwarf);
         void DestroyShaft();
         MaterialType DigIntoWall();
     }

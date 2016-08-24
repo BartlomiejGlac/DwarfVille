@@ -1,9 +1,11 @@
+using System.Collections.Generic;
 using DwarfVille.DomainLogic.Buildings.MiningDistrict.Shafts;
+using DwarfVille.DomainLogic.Buildings.MiningDistrict.Walls;
 
 namespace DwarfVille.DomainLogic.Dwarfs.WorkingStrategies
 {
-    internal interface IWorkStrategy
+    public interface IWorkStrategy
     {
-        void WorkOn(IShaft shaft);
+        IList<MaterialType> WorkOn(IShaft shaft);
     }
 }

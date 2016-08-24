@@ -6,17 +6,17 @@ namespace DwarfVille.DomainLogic.Buildings.MiningDistrict.Shafts
 {
     internal class Shaft : IShaft
     {
-        private readonly IList<Dwarf> _assignedToWarkDwarfes;
-        private IDigable _digable;
+        private readonly IList<IWorkable> _assignedToWarkDwarfes;
+        private readonly IDigable _digable;
         private bool _isDestroyed;
 
         public Shaft(IDigable digable)
         {
             _digable = digable;
-            _assignedToWarkDwarfes = new List<Dwarf>();
+            _assignedToWarkDwarfes = new List<IWorkable>();
         }
 
-        public void AssignDwarf(Dwarf assignedToWorkDwarf)
+        public void AssignDwarf(IWorkable assignedToWorkDwarf)
         {
             if (_isDestroyed)
             {
@@ -37,6 +37,11 @@ namespace DwarfVille.DomainLogic.Buildings.MiningDistrict.Shafts
         public MaterialType DigIntoWall()
         {
             return _digable.Dig();
+        }
+
+        public int NumberOfWorkers()
+        {
+            return _assignedToWarkDwarfes.Count;
         }
     }
 }
